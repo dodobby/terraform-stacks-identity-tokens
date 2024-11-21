@@ -41,7 +41,7 @@ data "aws_iam_policy_document" "stacks_role_policy" {
       # You can widen access here to an entire organization or project by
       # tweaking the value below. You can also restrict access to specific
       # deployments or operations. See the User Guide for more info.
-      values = ["organization:${var.tfc_organization}:project:${var.tfc_project}:stack:${var.tfc_stack}:*"]
+      values = ["organization:${var.tfc_organization}:project:${var.tfc_project}:stack:*"]
     }
   }
 }
